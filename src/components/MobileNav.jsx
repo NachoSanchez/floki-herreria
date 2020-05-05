@@ -2,10 +2,12 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import close from '../assets/img/close.svg'
 import { NavContext } from '../contexts/NavContext';
+import { CartContext } from '../contexts/CartContext';
 import styles from './Nav.module.css';
 
 const MobileNav = () => {
     const { nav, setNav } = useContext(NavContext);
+    const { cart } = useContext(CartContext);
     const handleClick = () => ( setNav(!nav));
 
     const show = nav ? styles['mobile-menu'] : styles['d-none'];
@@ -15,6 +17,11 @@ const MobileNav = () => {
             <ul>
                 <li onClick={ handleClick }>
                     <img src={ close } alt=""/>
+                </li>
+                <li>
+                    <NavLink to='/checkout'>
+                        Carrito <small>{' ('+ cart.length + ')'}</small>
+                    </NavLink>
                 </li>
                 <li>
                     <NavLink 
@@ -33,7 +40,6 @@ const MobileNav = () => {
                         Contacto
                     </NavLink>
                 </li>
-
             </ul>
         </section>
      );

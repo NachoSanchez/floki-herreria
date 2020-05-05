@@ -14,7 +14,7 @@ const List = () => {
                     { product.name}
 
                     <button onClick={ ()=>( setCart([...cart, product]) ) }>
-                        Añadir al carritp
+                        Añadir al carrito
                     </button>
                 </li>
             )) }

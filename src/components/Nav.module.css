@@ -13,6 +13,7 @@ header {
 }
 
 .logo {
+    margin-left: -20px;
     width: 170px;
 }
 
@@ -85,6 +86,11 @@ header {
     text-align: end;
 }
 
+.mobile-menu ul li:nth-child(2n) {
+    align-items: center;
+    display: flex;
+}
+
 .mobile-menu ul li img {
     cursor: pointer;
     position: absolute;
@@ -102,11 +108,23 @@ header {
 
 @media (max-width: 900px) {
     
+    header {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        top: 10px;
+    }
+
     .nav-links li {
         display: none;
     }
 
     .nav-links li:last-child {
         display: flex
+    }
+
+    .logo {
+        width: 150px;
     }
 }
