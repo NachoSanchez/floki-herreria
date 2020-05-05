@@ -1,0 +1,112 @@
+header {
+    display: flex;
+    padding: 10px 5%;
+    justify-content: space-between;
+}
+
+.nav-links {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 7%;
+    top: 25px;
+}
+
+.logo {
+    width: 170px;
+}
+
+.menu {
+    width: 40px;
+}
+
+.cart {
+    width: 50px
+}
+
+.cart_container {
+    display: inline;
+}
+
+.cart_container span {
+    display: flex;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    font-weight: 700;
+    height: 20px;
+    justify-content: center;
+    right: 0;
+    top: 0px;
+    width: 20px;
+    z-index: 3;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin: 20px;
+}
+
+.nav-links li:last-child {
+    display: none;
+}
+
+.nav-links li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.mobile-menu {
+    background-color: rgba(0, 0, 0, .85);
+    height: 100vh;
+    padding: 25vh 9%;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 100
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+}
+
+.mobile-menu ul li:first-child {
+    text-align: end;
+}
+
+.mobile-menu ul li img {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    width: 40px;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    font-size: 2em;
+    opacity: .8;
+    text-decoration: none;   
+}
+
+@media (max-width: 900px) {
+    
+    .nav-links li {
+        display: none;
+    }
+
+    .nav-links li:last-child {
+        display: flex
+    }
+}
