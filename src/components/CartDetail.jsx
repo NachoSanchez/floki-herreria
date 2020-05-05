@@ -10,6 +10,8 @@ const CartDetail = () => {
                     <li>{ item.name } - {item. id} </li>
                 ))
             }
+             <li></li>
+            <li>Acá pagas o te contactas por whatsapp</li>
         </ul>
      );
 }

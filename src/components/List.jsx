@@ -18,8 +18,7 @@ const List = () => {
                     </button>
                 </li>
             )) }
-            <li></li>
-            <li>Acá pagas o te contactas por whatsapp</li>
+           
         </ul>
     );
 }
